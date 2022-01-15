@@ -1,0 +1,10 @@
+<ngb-carousel>
+    <ng-template *ngFor = "let pokemon of pokemons" ngbSlide>
+      <div class="picsum-img-wrapper">
+          <div class="center">
+            <a (click)="navigate(pokemon)"><img [src]="pokemon.sprites.other.dream_world.front_default" alt=""></a>
+          </div>           
+      </div>
+    </ng-template>
+</ngb-carousel>
+
